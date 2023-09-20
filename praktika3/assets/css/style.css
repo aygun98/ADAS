@@ -1,0 +1,228 @@
+@import url(./dark.css);
+@import url(./light.css);
+* {
+  font-family: "IBM Plex Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body #container main .header-section div button, body #container header nav .btns button:last-child, body #container header nav .btns button:first-child {
+  border: none;
+  border-radius: 15px;
+  padding: 12px 25px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+body #container {
+  position: relative;
+}
+body #container header .overlay-menu.active {
+  left: 0;
+}
+body #container header .overlay-menu {
+  position: fixed;
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  background-color: rgb(97, 151, 151);
+  align-items: flex-start;
+  height: 100vh;
+  top: 0;
+  align-items: center;
+  gap: 10px;
+  left: -100%;
+  transition: 1s;
+}
+body #container header .overlay-menu .logo p {
+  color: #14203E;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+body #container header .overlay-menu nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+body #container header .overlay-menu nav a {
+  color: #fff;
+  font-size: 20px;
+}
+body #container header .overlay-menu .btns {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+body #container header .overlay-menu .btns button {
+  padding: 10px !important;
+  font-size: 12px !important;
+}
+body #container header .overlay-menu .btns button:first-child {
+  background-color: #F6F0E8;
+  border: none;
+}
+body #container header .overlay-menu .btns button:last-child {
+  background-color: #14203E;
+  border: none;
+  color: #fff;
+}
+@media (max-width: 992px) {
+  body #container header .overlay-menu .btns {
+    flex-direction: column;
+  }
+}
+body #container header .overlay-menu .fa-xmark-btn {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  color: #14203E;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+body #container header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+}
+body #container header nav .logo p {
+  color: rgba(20, 32, 62, 0.2392156863);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+body #container header nav nav {
+  display: flex;
+  padding: 0 40px;
+  gap: 30px;
+}
+body #container header nav nav a {
+  color: #14203E;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media (max-width: 992px) {
+  body #container header nav nav {
+    display: none;
+  }
+}
+body #container header nav .btns {
+  display: flex;
+  gap: 20px;
+}
+body #container header nav .btns button:first-child {
+  background-color: #F6F0E8;
+  border: none;
+}
+body #container header nav .btns button:last-child {
+  background-color: #14203E;
+  border: none;
+  color: #fff;
+}
+@media (max-width: 992px) {
+  body #container header nav .btns {
+    display: none;
+  }
+}
+body #container header nav .fa-bars-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  display: none;
+  color: #14203E;
+}
+@media (max-width: 992px) {
+  body #container header nav .fa-bars-btn {
+    display: inline-block;
+  }
+}
+body #container main .header-section {
+  padding: 20px;
+  background-color: #FFFCF8;
+  display: flex;
+  justify-content: center;
+}
+body #container main .header-section div {
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+body #container main .header-section div h1 {
+  color: #14203E;
+  font-size: 66px;
+  font-weight: 700;
+}
+@media (max-width: 992px) {
+  body #container main .header-section div h1 {
+    font-size: 40px;
+  }
+}
+body #container main .header-section div p {
+  color: #14203E;
+  font-size: 22px;
+  font-weight: 500;
+}
+@media (max-width: 992px) {
+  body #container main .header-section div p {
+    font-size: 20px;
+  }
+}
+body #container main .header-section div button {
+  background-color: #14203E;
+  color: #fff;
+}
+body #container main .cards-section {
+  padding: 100px 50px;
+}
+body #container main .cards-section h4 {
+  text-align: center;
+  color: #14203E;
+}
+body #container main .cards-section .cards {
+  padding: 50px 0;
+  color: #14203E;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+body #container main .cards-section .cards .card {
+  width: 290px;
+  margin: 0 auto;
+}
+body #container main .cards-section .cards .card .img {
+  width: 100%;
+}
+body #container main .cards-section .cards .card .img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body #container main .cards-section .cards .card p {
+  font-size: 22px;
+  font-weight: 700;
+}
+@media (max-width: 716px) {
+  body #container main .cards-section .cards .card {
+    width: 70%;
+  }
+}/*# sourceMappingURL=style.css.map */

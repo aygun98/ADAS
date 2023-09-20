@@ -1,0 +1,68 @@
+.dark-mode {
+   
+    --dark-bg-color1: #203666;
+    --dark-bg-color2: #0f1f42;
+    --dark-font-color: #ffffffa9;
+    --dark-bg-color: #0000006e;
+
+}
+.dark-mode  .text-logo{
+    color: #fff !important;
+}
+.dark-mode .overlay-menu{
+    background-color: var(--dark-bg-color1);
+}
+.dark-mode .overlay-menu a{
+    color: var(--dark-font-color);
+}
+.dark-mode .overlay-menu a:hover{
+    color: #fff;
+}
+.dark-mode .overlay-menu>button{
+    color: var(--dark-font-color);
+}
+.dark-mode .overlay-menu>button:hover{
+    color: #fff;
+}
+.dark-mode .mode-btns button:last-child{
+    background-color: #375ba8;
+    color: #fff;
+
+}
+
+.dark-mode .bg-color {
+    background-color:var(--dark-bg-color2);
+
+}
+.dark-mode a{
+    color: var(--dark-font-color);
+}
+.dark-mode .bars-btn{
+    color: #fff;
+}
+.dark-mode p{
+    color: var(--dark-font-color);
+}
+.dark-mode span{
+    color: var(--dark-font-color) !important;
+}
+.dark-mode h2{
+    color:#fff;
+}
+.dark-mode h3{
+    color:#fff;
+}
+.dark-mode footer{
+ background-color: var(--dark-bg-color1);
+}
+.dark-mode  .box-section div{
+    background-color: var(--dark-bg-color1);
+}
+.dark-mode  .box-section div button {
+    background-color: var(--dark-bg-color1);
+    color: #fff;
+}
+.dark-mode  .box-section div:hover  button {
+    background-color:#0f1f42;
+    color: #fff;
+}

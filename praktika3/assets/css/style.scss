@@ -1,0 +1,317 @@
+// @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@300;400;600;700&display=swap');
+@import url(./dark.css);
+@import url(./light.css);
+$fonts:'IBM Plex Sans',
+sans-serif;
+$primary0: #FFFCF8;
+$primary1: #14203e3d;
+$primary2: #14203E;
+$primary3: #F6F0E8;
+$primary4: #14203E;
+
+
+* {
+    font-family: $fonts;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+%button {
+    border: none;
+    border-radius: 15px;
+    padding: 12px 25px;
+    font-size: 18px;
+
+    font-weight: 400;
+}
+
+%button_576px {
+    border: none;
+    border-radius: 15px;
+    padding: 12px 25px;
+    font-size: 18px;
+
+    font-weight: 400;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    // background-color: coral;
+    #container {
+        position: relative;
+
+        
+
+            header {
+                .overlay-menu.active{
+                    left: 0;
+
+                }
+                .overlay-menu {
+                    position: fixed;
+                    display: flex;
+                    width: 70%;
+                    flex-direction: column;
+                    background-color: rgb(97, 151, 151);
+                    align-items: flex-start;
+                    height: 100vh;
+                    top: 0;
+                    align-items: center;
+                    gap: 10px;
+                    left: -100%;
+                    transition: 1s;
+        
+                    .logo {
+                        p {
+                            color:$primary4;
+                            font-size: 22px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                            text-transform: uppercase;
+                        }
+                    }
+        
+                    nav {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+        
+        
+                        a {
+                            color: #fff;
+                            font-size: 20px;
+                        }
+                    }
+        
+                    .btns {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+        
+        
+        
+                        button {
+                            padding: 10px !important;
+                            font-size: 12px !important;
+        
+                            &:first-child {
+                                background-color: $primary3;
+                                border: none;
+        
+                            }
+        
+                            &:last-child {
+                                background-color: $primary4;
+                                border: none;
+                                color: #fff;
+        
+                            }
+        
+                        }
+        
+        
+                        @media (max-width:992px) {
+                            // display: flex;
+                            flex-direction: column;
+        
+                        }
+                    }
+                
+                    .fa-xmark-btn{
+                        position: absolute;
+                        background-color: transparent;
+                        border: none;
+                        font-size: 25px;
+                        color: $primary4;
+                        right: 20px;
+                        top: 20px;
+                        cursor: pointer;
+                    }
+
+
+            }
+            nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px 20px;
+
+                .logo {
+                    p {
+
+                        color: $primary1;
+
+                        font-size: 22px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        text-transform: uppercase;
+                    }
+                }
+
+                nav {
+                    display: flex;
+                    padding: 0 40px;
+                    gap: 30px;
+
+                    a {
+
+                        color: $primary2;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+
+                    @media (max-width:992px) {
+                        display: none;
+                    }
+                }
+
+                .btns {
+                    display: flex;
+                    gap: 20px;
+
+                    button {
+
+
+                        &:first-child {
+                            background-color: $primary3;
+                            border: none;
+                            @extend %button;
+                        }
+
+                        &:last-child {
+                            background-color: $primary4;
+                            border: none;
+                            color: #fff;
+                            @extend %button;
+                        }
+
+                    }
+
+                   
+
+                    @media (max-width:992px) {
+                        display: none;
+                    }
+                }
+
+                .fa-bars-btn {
+                    background-color: transparent;
+                    border: none;
+                    font-size: 30px;
+                    display: none;
+                    color: $primary4;
+
+                    @media (max-width:992px) {
+                        display: inline-block;
+                    }
+                }
+
+            }
+            ;
+
+            
+        }
+        main {
+
+            //   padding: 10px ;
+            .header-section {
+                padding: 20px;
+                background-color: $primary0;
+                display: flex;
+                justify-content: center;
+
+                div {
+                    max-width: 600px;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+
+                    h1 {
+                        color: $primary4;
+                        font-size: 66px;
+
+                        font-weight: 700;
+
+                        @media (max-width:992px) {
+                            font-size: 40px;
+
+                        }
+                    }
+
+                    p {
+                        color: $primary4;
+                        font-size: 22px;
+
+                        font-weight: 500;
+
+                        @media (max-width:992px) {
+                            font-size: 20px;
+
+                        }
+                    }
+
+                    button {
+                        @extend %button;
+                        background-color: $primary4;
+                        color: #fff;
+                    }
+                }
+
+            }
+
+            .cards-section {
+                padding: 100px 50px;
+
+                h4 {
+                    text-align: center;
+                    color: $primary4;
+                }
+
+                .cards {
+                    padding: 50px 0;
+                    color: $primary4;
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    justify-content: space-between;
+                    gap: 20px;
+
+                    .card {
+                        width: 290px;
+                        margin: 0 auto;
+
+                        .img {
+                            width: 100%;
+
+                            img {
+                                width: 100%;
+                                object-fit: cover;
+                            }
+
+                        }
+
+                        p {
+                            font-size: 22px;
+                            font-weight: 700;
+                        }
+
+                        @media (max-width:716px) {
+                            width: 70%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

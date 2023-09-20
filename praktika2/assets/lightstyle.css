@@ -1,0 +1,71 @@
+:root {
+    /* --font: 'Montserrat', sans-serif; */
+    --bg-color: #EEF1FC;
+    --bg-color2: #597FE2;
+    --bg-color3: #E2E7FA;
+    --font-color: #6D7593;
+    --font-color2: #13274F;
+   
+}
+
+.light-mode .text-logo{
+    color: #000 !important;
+}
+
+.light-mode .overlay-menu{
+    background-color: var(--bg-color3);
+}
+.light-mode .overlay-menu a{
+    color:#0000009a;
+}
+.light-mode .overlay-menu a:hover{
+    color: #375ba8;
+}
+.light-mode .overlay-menu>button{
+    color:#000;
+}
+.light-mode .overlay-menu>button:hover{
+    color:#375ba8;
+}
+.light-mode .mode-btns button:first-child{
+   background-color: #375ba8;
+   color: #fff;
+
+
+}
+.light-mode .bg-color {
+    background-color:var(--bg-color)
+
+}
+.light-mode a{
+    color: var(--font-color2);
+}
+.light-mode .bars-btn{
+    color: #000000;
+}
+.light-mode p{
+    color: var(--font-color);
+}
+.light-mode span{
+    color: var(--font-color) !important;
+}
+.light-mode h2{
+    color:#000;
+}
+.light-mode h3{
+    color: var(--font-color);
+}
+.light-mode footer{
+ background-color: var(--bg-color3);
+}
+.light-mode  .box-section div{
+    background-color:#fff;
+}
+.light-mode  .box-section div button {
+    background-color: var(--dark-bg-color1);
+    color: var(--font-color);
+}
+.light-mode  .box-section div:hover  button {
+    background-color:var(--bg-color2);
+    color: #fff;
+}
