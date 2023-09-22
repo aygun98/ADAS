@@ -1,0 +1,171 @@
+@font-face {
+  font-family: MS;
+  src: url(../../../fonts/trebuc.ttf);
+}
+* {
+  box-sizing: border-box;
+  font-family: MS;
+}
+
+a {
+  text-decoration: none;
+}
+
+body header .top {
+  background-color: #2A2A2A;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 40px;
+  gap: 60px;
+}
+body header .top .fa-bars-button {
+  display: none;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  font-size: 25px;
+}
+@media (max-width: 768px) {
+  body header .top .fa-bars-button {
+    display: inline-block;
+  }
+}
+body header .top .search-div {
+  width: 440px;
+  display: flex;
+  position: relative;
+  border-radius: 10px;
+}
+body header .top .search-div input {
+  border-radius: 10px;
+  padding: 10px 0 10px 10px;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+body header .top .search-div button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 2px;
+  top: 7px;
+  font-size: 19px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  body header .top .search-div {
+    display: none;
+  }
+}
+body header .top .contact {
+  min-width: 194px;
+}
+body header .top .contact a {
+  color: #fff;
+  font-size: 20px;
+}
+@media (max-width: 992px) {
+  body header .top .contact {
+    display: none;
+  }
+}
+body header .top .icons {
+  display: flex;
+  gap: 10px;
+  position: relative;
+}
+body header .top .icons button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+body header .top .icons div span {
+  color: #fff;
+  display: inline-block;
+  position: absolute;
+  background-color: #FB791B;
+  padding: 0px 5px;
+  border-radius: 50px;
+  right: 0;
+  top: 0;
+  font-size: 9;
+}
+body header nav {
+  background-color: rgba(42, 42, 42, 0.04);
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 0 60px;
+  font-weight: 700;
+  align-items: center;
+}
+body header nav ul {
+  display: flex;
+  gap: 40px;
+  padding: 0;
+}
+body header nav ul a {
+  color: #2A2A2A;
+}
+body header nav ul a .fa-bars {
+  margin-right: 6px;
+}
+@media (max-width: 865px) {
+  body header nav ul {
+    gap: 20px;
+  }
+}
+body header nav div {
+  display: flex;
+  gap: 10px;
+}
+body header nav div a {
+  color: #FB791B;
+  font-size: 27px;
+}
+@media (max-width: 1034px) {
+  body header nav {
+    padding: 0 10px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  body header nav {
+    display: none;
+    font-size: 14px;
+  }
+}
+body header .mobile-search {
+  background-color: rgba(42, 42, 42, 0.04);
+  padding: 15px 0;
+  display: none;
+  justify-content: center;
+}
+body header .mobile-search .search-div {
+  width: 440px;
+  display: flex;
+  position: relative;
+  border-radius: 10px;
+}
+body header .mobile-search .search-div input {
+  border-radius: 10px;
+  padding: 10px 0 10px 10px;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+body header .mobile-search .search-div button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 2px;
+  top: 7px;
+  font-size: 19px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  body header .mobile-search {
+    display: flex;
+  }
+}/*# sourceMappingURL=navbar.css.map */

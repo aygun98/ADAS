@@ -1,0 +1,220 @@
+$primary1: #2A2A2A;
+$primary2: #FB791B;
+$primary3: rgba(42, 42, 42, 0.04);
+
+
+@font-face {
+    font-family: MS;
+    src: url(../../../fonts/trebuc.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: MS;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    header {
+        .top {
+            background-color: $primary1;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px 40px;
+            gap: 60px;
+
+            .fa-bars-button {
+                display: none;
+                background-color: transparent;
+                color: #fff;
+                border: none;
+                font-size: 25px;
+
+                @media (max-width:768px) {
+                    display: inline-block;
+                }
+            }
+
+            .search-div {
+                width: 440px;
+                display: flex;
+                position: relative;
+                border-radius: 10px;
+
+                input {
+                    border-radius: 10px;
+                    padding: 10px 0 10px 10px;
+
+                    width: 100%;
+                    // height: 100%;
+                    outline: none;
+                    border: none;
+
+                }
+
+                button {
+                    background-color: transparent;
+                    border: none;
+                    position: absolute;
+                    right: 2px;
+                    top: 7px;
+                    // padding: 5px 0;
+                    font-size: 19px;
+                    cursor: pointer;
+
+                }
+
+                @media (max-width:768px) {
+                    display: none;
+                }
+
+            }
+
+            .contact {
+                min-width: 194px;
+
+                a {
+                    color: #fff;
+                    font-size: 20px;
+                }
+
+                @media (max-width:992px) {
+                    display: none;
+                }
+            }
+
+            .icons {
+                display: flex;
+                gap: 10px;
+                position: relative;
+
+                button {
+                    background-color: transparent;
+                    border: none;
+                    cursor: pointer;
+                }
+
+                div {
+                    // height: max-content;
+
+
+                    span {
+                        color: #fff;
+                        display: inline-block;
+                        position: absolute;
+                        background-color: $primary2;
+                        // width: 15px;
+                        // height: 15px;
+                        padding: 0px 5px;
+                        border-radius: 50px;
+                        right: 0;
+                        top: 0;
+                        font-size: 9;
+                    }
+                }
+            }
+
+        }
+
+        nav {
+            // width: 100%;
+            background-color: $primary3;
+            display: flex;
+            justify-content: space-between;
+            gap: 50px;
+            padding: 0 60px;
+            font-weight: 700;
+            align-items: center;
+
+            ul {
+                display: flex;
+                gap: 40px;
+                padding: 0;
+
+                a {
+
+                    .fa-bars {
+                        margin-right: 6px;
+                    }
+
+                    color: $primary1;
+                }
+
+                @media (max-width:865px) {
+
+                    gap: 20px;
+                }
+            }
+
+            div {
+                
+                display: flex;
+                gap: 10px;
+
+                a {
+                    color: $primary2;
+                    font-size: 27px;
+
+                }
+            }
+
+            @media (max-width:1034px) {
+                padding: 0 10px;
+                font-size: 14px;
+            }
+
+            @media (max-width:768px) {
+                display: none;
+                font-size: 14px;
+            }
+        }
+
+        .mobile-search {
+            background-color: $primary3;
+            padding: 15px 0;
+            display: none;
+            justify-content: center;
+            .search-div {
+                width: 440px;
+                display: flex;
+
+                position: relative;
+                border-radius: 10px;
+
+                input {
+                    border-radius: 10px;
+                    padding: 10px 0 10px 10px;
+
+                    width: 100%;
+                    // height: 100%;
+                    outline: none;
+                    border: none;
+
+                }
+
+                button {
+                    background-color: transparent;
+                    border: none;
+                    position: absolute;
+                    right: 2px;
+                    top: 7px;
+                    // padding: 5px 0;
+                    font-size: 19px;
+                    cursor: pointer;
+
+                }
+
+            }
+            @media (max-width:768px) {
+                display: flex;
+            }
+        }
+
+        
+    }
+}
