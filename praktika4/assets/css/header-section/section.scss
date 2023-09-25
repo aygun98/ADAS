@@ -1,4 +1,4 @@
-$primary2: #FB791B;
+@import '.././color/color';
 
 body {
 
@@ -50,7 +50,7 @@ body {
                     button {
                         position: absolute;
                         color: #fff;
-                        background-color: $primary2;
+                        background-color:$primary2;
                         border: none;
                         padding: 9px 27px;
                         border-radius: 10px;

@@ -10,7 +10,9 @@
 a {
   text-decoration: none;
 }
-
+body{
+  margin: 0;
+}
 body header .top {
   background-color: #2A2A2A;
   display: flex;

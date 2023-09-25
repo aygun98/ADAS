@@ -1,3 +1,7 @@
 @import url(./header/navbar/navbar.css);
 @import url(./header-section/section.css);
+@import url(./katalog/katalog.css);
 
+*{
+    box-sizing: border-box;
+}

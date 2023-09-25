@@ -1,6 +1,4 @@
-$primary1: #2A2A2A;
-$primary2: #FB791B;
-$primary3: rgba(42, 42, 42, 0.04);
+@import '../../color/color';
 
 
 @font-face {
@@ -19,6 +17,7 @@ a {
 }
 
 body {
+   
     header {
         .top {
             background-color: $primary1;
@@ -107,7 +106,7 @@ body {
                         color: #fff;
                         display: inline-block;
                         position: absolute;
-                        background-color: $primary2;
+                        background-color:$primary2;
                         // width: 15px;
                         // height: 15px;
                         padding: 0px 5px;
@@ -142,7 +141,7 @@ body {
                         margin-right: 6px;
                     }
 
-                    color: $primary1;
+                    color: color.$primary1;
                 }
 
                 @media (max-width:865px) {
@@ -157,7 +156,7 @@ body {
                 gap: 10px;
 
                 a {
-                    color: $primary2;
+                    color: color.$primary2;
                     font-size: 27px;
 
                 }
@@ -175,7 +174,7 @@ body {
         }
 
         .mobile-search {
-            background-color: $primary3;
+            background-color: color.$primary3;
             padding: 15px 0;
             display: none;
             justify-content: center;
